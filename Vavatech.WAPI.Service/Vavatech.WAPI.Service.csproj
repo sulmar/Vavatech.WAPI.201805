@@ -183,6 +183,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -276,6 +277,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Vavatech.WAPI.IServices\Vavatech.WAPI.IServices.csproj">
+      <Project>{2349FEDB-45D0-46B9-BFD7-FA5C798C97A5}</Project>
+      <Name>Vavatech.WAPI.IServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vavatech.WAPI.MockServices\Vavatech.WAPI.MockServices.csproj">
+      <Project>{99ECB7DB-F361-40C2-9D2E-4AB30F0B14C4}</Project>
+      <Name>Vavatech.WAPI.MockServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vavatech.WAPI.Models\Vavatech.WAPI.Models.csproj">
+      <Project>{6D9EE8B0-EC28-4091-B327-1535206FDF10}</Project>
+      <Name>Vavatech.WAPI.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
