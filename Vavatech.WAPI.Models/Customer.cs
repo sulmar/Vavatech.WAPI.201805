@@ -10,10 +10,25 @@ namespace Vavatech.WAPI.Models
     {
         public int Id { get; set; }
 
+        public string Code { get; set; }
+
         public string Name { get; set; }
 
         public bool IsDeleted { get; set; }
 
         public string City { get; set; }
+
+        public Location Location { get; set; }
+
+        public DateTime CreateDate { get; set; }
+
+    }
+
+
+    public class Location : Base
+    {
+        public double Latitude { get; set; }
+
+        public double Longitude { get; set; }
     }
 }
