@@ -14,6 +14,8 @@ namespace Vavatech.WAPI.MockServices
         private static IList<Customer> customers = new List<Customer>
         {
             new Customer("C001", "Company 1") {  Id = 1, Code = "C001", Name = "Customer 1", City = "Warszawa" },
+            new Customer("C002", "Company 2") {  Id = 2, Code = "C002", Name = "Customer 2", City = "Warszawa" },
+
             //new Customer {  Id = 2, Code = "C002", Name = "Customer 2", City = "Warszawa" },
             //new Customer {  Id = 3, Code = "C003", Name = "Customer 3", City = "Bydgoszcz" },
             //new Customer {  Id = 4, Code = "C004", Name = "Customer 4", City = "Białystok" },

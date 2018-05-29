@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 using Vavatech.WAPI.Service.Formatters;
+using Vavatech.WAPI.Service.Handlers;
 
 namespace Vavatech.WAPI.Service
 {
@@ -30,6 +31,11 @@ namespace Vavatech.WAPI.Service
 
 
             config.Formatters.Add(new CsvMediaTypeFormatter());
+            config.Formatters.Add(new QrCodeMediaTypeFormatter());
+
+
+            config.MessageHandlers.Add(new TraceMessageHandler());
+            config.MessageHandlers.Add(new FormatMessageHandler());
         }
     }
 }

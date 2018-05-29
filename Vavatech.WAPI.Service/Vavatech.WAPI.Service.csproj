@@ -187,10 +187,13 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Formatters\CsvMediaTypeFormatter.cs" />
+    <Compile Include="Formatters\QrCodeMediaTypeFormatter.cs" />
     <Compile Include="Formatters\VCardMediaTypeFormatter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Handlers\FormatMessageHandler.cs" />
+    <Compile Include="Handlers\TraceMessageHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -12,7 +12,7 @@ using Vavatech.WAPI.Models.SearchCriteria;
 
 namespace Vavatech.WAPI.Service.Controllers
 {
-  //  [RoutePrefix("api/customers")]
+   [RoutePrefix("api/customers")]
     public class CustomersController : ApiController
     {
         private readonly ICustomersService customersService;
@@ -44,22 +44,22 @@ namespace Vavatech.WAPI.Service.Controllers
             return Ok(customers);
         }
 
-        [HttpGet]
-        [Route(Order =1)]
-        public IHttpActionResult Get([FromUri] Location location)
-        {
-            var customers = customersService.Get(location);
+        //[HttpGet]
+        //[Route(Order =1)]
+        //public IHttpActionResult Get([FromUri] Location location)
+        //{
+        //    var customers = customersService.Get(location);
 
-            return Ok(customers);
-        }
+        //    return Ok(customers);
+        //}
         
-        [HttpGet]
-        public IHttpActionResult Get([FromUri] CustomerSearchCriteria criteria)
-        {
-            var customers = customersService.Get(criteria);
+        //[HttpGet]
+        //public IHttpActionResult Get([FromUri] CustomerSearchCriteria criteria)
+        //{
+        //    var customers = customersService.Get(criteria);
 
-            return Ok(customers);
-        }
+        //    return Ok(customers);
+        //}
 
 
         [HttpGet]
