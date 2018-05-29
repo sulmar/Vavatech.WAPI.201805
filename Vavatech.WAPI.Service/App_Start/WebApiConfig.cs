@@ -36,6 +36,7 @@ namespace Vavatech.WAPI.Service
 
             config.MessageHandlers.Add(new TraceMessageHandler());
             config.MessageHandlers.Add(new FormatMessageHandler());
+           // config.MessageHandlers.Add(new SecretKeyHandler());
         }
     }
 }

@@ -12,6 +12,7 @@ using Vavatech.WAPI.Models.SearchCriteria;
 
 namespace Vavatech.WAPI.Service.Controllers
 {
+ //  [Authorize]
    [RoutePrefix("api/customers")]
     public class CustomersController : ApiController
     {
@@ -82,6 +83,15 @@ namespace Vavatech.WAPI.Service.Controllers
         {
             var customers = customersService.Get();
 
+            if (!User.IsInRole("Administrator"))
+            {
+                var items = customers.Select(x => new { x.Code, x.City, x.Name });
+
+                return Ok(items);
+            }
+
+      
+
             return Ok(customers);
         }
 
@@ -115,6 +125,7 @@ namespace Vavatech.WAPI.Service.Controllers
         }
 
         [Route("{id:int}")]
+        [Authorize(Roles ="Administrator,Developer")]
         public IHttpActionResult Delete(int id)
         {
             try

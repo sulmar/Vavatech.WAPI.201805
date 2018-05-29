@@ -193,6 +193,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Handlers\FormatMessageHandler.cs" />
+    <Compile Include="Handlers\SecretKeyHandler.cs" />
     <Compile Include="Handlers\TraceMessageHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

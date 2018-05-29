@@ -26,7 +26,7 @@ namespace Vavatech.WAPI.Service.Formatters
 
         public override bool CanWriteType(Type type)
         {
-            return type == typeof(Customer);
+                return type == typeof(Customer);
         }
 
         public override async Task WriteToStreamAsync(Type type, object value, Stream writeStream, HttpContent content, TransportContext transportContext)
