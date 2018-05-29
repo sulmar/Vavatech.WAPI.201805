@@ -22,6 +22,18 @@ namespace Vavatech.WAPI.Models
 
         public DateTime CreateDate { get; set; }
 
+
+        public Customer(string code, string name)
+        {
+            this.Code = code;
+            this.Name = name;
+        }
+
+        protected Customer()
+        {
+
+        }
+
     }
 
 

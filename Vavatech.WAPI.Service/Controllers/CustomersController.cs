@@ -12,7 +12,7 @@ using Vavatech.WAPI.Models.SearchCriteria;
 
 namespace Vavatech.WAPI.Service.Controllers
 {
-    [RoutePrefix("api/customers")]
+  //  [RoutePrefix("api/customers")]
     public class CustomersController : ApiController
     {
         private readonly ICustomersService customersService;
@@ -45,7 +45,7 @@ namespace Vavatech.WAPI.Service.Controllers
         }
 
         [HttpGet]
-        [Route(Order = 1)]
+        [Route(Order =1)]
         public IHttpActionResult Get([FromUri] Location location)
         {
             var customers = customersService.Get(location);
@@ -77,7 +77,7 @@ namespace Vavatech.WAPI.Service.Controllers
         }
 
         [HttpGet]
-        [Route(Order = 0)]
+        [Route(Order = 2)]
         public IHttpActionResult Pobierz()
         {
             var customers = customersService.Get();
@@ -114,6 +114,7 @@ namespace Vavatech.WAPI.Service.Controllers
             return CreatedAtRoute("DefaultApi", new { id = customer.Id }, customer);
         }
 
+        [Route("{id:int}")]
         public IHttpActionResult Delete(int id)
         {
             try
