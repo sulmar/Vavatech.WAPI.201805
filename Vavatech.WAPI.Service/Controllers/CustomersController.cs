@@ -17,16 +17,18 @@ namespace Vavatech.WAPI.Service.Controllers
     public class CustomersController : ApiController
     {
         private readonly ICustomersService customersService;
+        private readonly ITarrifsService tarrifsService;
 
         public CustomersController()
-            : this(new MockCustomersService())
+            : this(new MockCustomersService(), new MockTarrifsService())
         {
 
         }
 
-        public CustomersController(ICustomersService customersService)
+        public CustomersController(ICustomersService customersService, ITarrifsService tarrifsService)
         {
             this.customersService = customersService;
+            this.tarrifsService = tarrifsService;
         }
 
         [HttpGet]
@@ -140,6 +142,14 @@ namespace Vavatech.WAPI.Service.Controllers
 
                 // return NotFound();
             }
+        }
+
+
+        [HttpGet]
+        [Route("{code}/tarrifs")]
+        public IHttpActionResult GetTarrifs(string code)
+        {
+            return Ok(tarrifsService.GetByCustomer(code));
         }
     }
 }
