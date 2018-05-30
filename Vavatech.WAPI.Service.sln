@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vavatech.WAPI.MockServices"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vavatech.WAPI.MyService", "Vavatech.WAPI.MyService\Vavatech.WAPI.MyService.csproj", "{B9295808-7F24-4AC5-B137-5FFE9E7747E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vavatech.WAPI.ConsoleClient", "Vavatech.WAPI.ConsoleClient\Vavatech.WAPI.ConsoleClient.csproj", "{CE40D747-72C5-44FA-A5E6-D78E9393042B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{B9295808-7F24-4AC5-B137-5FFE9E7747E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9295808-7F24-4AC5-B137-5FFE9E7747E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9295808-7F24-4AC5-B137-5FFE9E7747E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE40D747-72C5-44FA-A5E6-D78E9393042B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE40D747-72C5-44FA-A5E6-D78E9393042B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE40D747-72C5-44FA-A5E6-D78E9393042B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE40D747-72C5-44FA-A5E6-D78E9393042B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
