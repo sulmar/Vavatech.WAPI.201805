@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="ICustomersService.cs" />
     <Compile Include="ITarrifsService.cs" />
+    <Compile Include="IUsersService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
